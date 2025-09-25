@@ -5,6 +5,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.13-38B2AC.svg)](https://tailwindcss.com/)
 [![DaisyUI](https://img.shields.io/badge/DaisyUI-5.1.18-5A0FC8.svg)](https://daisyui.com/)
 [![CodeMirror](https://img.shields.io/badge/CodeMirror-6.x-000000.svg)](https://codemirror.net/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > A sleek, modern web application that leverages the power of AI to seamlessly convert code between multiple programming languages. Built with cutting-edge technologies for an unparalleled developer experience.
 
@@ -138,16 +139,6 @@ ai-code-converter/
 ├── eslint.config.js
 └── README.md
 ```
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ### Development Guidelines
 
