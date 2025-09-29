@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import './App.css'
 
 import { Logo } from './components/Logo';
@@ -23,7 +23,12 @@ function App() {
       if(code && code != ""){
         setLaoding(true)
         try {
-          const prompt = `Convert the following ${language} code into ${outputLanguage} code. 
+          const prompt = `Convert the following ${language} code into ${outputLanguage} code.
+          Coversion should include whole code with import lines as well, don't include unecessary imports. 
+          Also check if the input code language is the same as ${language} code.
+          If not then just return invalid langauge code.
+          If compile errors then return the errors in the code.
+          The result code should be optimized and the best version of itself.
           Only return valid ${outputLanguage} code without explanation:\n\n${code}`;
           const response = await window.puter.ai.chat(prompt, {
             model: "gpt-5-nano"
